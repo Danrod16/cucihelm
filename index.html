@@ -3,14 +3,15 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Cuci Helm - Franchise Opportunities</title>
+        <title>Cuci Helm - Become a partner</title>
         <link rel="stylesheet" href="style.css">
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
         <script src="https://cdn.tailwindcss.com"></script>
     </head>
-    <body data-theme="light">
-        <div class="navbar bg-base-100">
+    <body data-theme="light" class="bg-[#f8f9ff]">
+        <div class="navbar bg-base-100 fixed top-0 left-0 right-0 z-50">
             <div class="flex-1">
+                <image src="/images/logo.png" alt="Cuci Helm" class="w-10 h-10"></image>
                 <a href="/" class="btn btn-ghost text-xl">Cuci Helm</a>
             </div>
             <div class="flex-none">
@@ -22,44 +23,69 @@
             </div>
         </div>
 
-        <div class="hero bg-base-200 min-h-screen">
+        <div class="min-h-screen hero">
             <div class="hero-content flex-col lg:flex-row-reverse">
               <img
-                src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-                class="max-w-sm rounded-lg shadow-2xl" />
-              <div>
+                src="/images/banner-image.png"
+                class="max-w-full " />
+              <div class="text-center lg:text-left max-w-lg">
                 <h1 class="text-5xl font-bold">Say goodbye to Sweaty, Smelly Helmets!</h1>
                 <p class="py-6">
                   Cuci Helm makes helmet cleaning fast and super easy.
                   Stop by our cleaning stations and get that fresh, ready-to-ride feel in minutes.
                 </p>
-                <button class="btn btn-primary">View Locations</button>
+                <button class="btn btn-primary" src="https://tinyurl.com/Become-a-partner-in-indonesia">View Locations</button>
               </div>
             </div>
           </div>
 
-        <section class="about" id="about">
-            <div class="container">
-                <h3>Why Cuci Helm?</h3>
-                <p>Our innovative cleaning machines provide a fast and hygienic way to clean helmets. With the rise of motorbike usage in Indonesia, the demand for clean helmets is higher than ever.</p>
+          <section id="intro">
+            <div class="container mx-auto text-center h-screen flex flex-col justify-center items-center">
+                <h3 class="text-center text-4xl font-bold">Turn every <span class="text-primary">helmet</span> into profit</h3>
+                <p class="text-center text-xl max-w-2xl mx-auto my-6">Earn a generous revenue share and give your customers fresh, spotless helmets in under 8 minutes—effortless for you, invaluable for them!
+                </p>
             </div>
         </section>
 
-        <section class="benefits" id="benefits">
-            <div class="container">
-                <h3>Franchise Benefits</h3>
-                <ul>
-                    <li>Low operational costs</li>
-                    <li>High demand in urban areas</li>
-                    <li>Proven business model</li>
-                    <li>Comprehensive training and support</li>
-                </ul>
+        <section class="about" id="about">
+            <div class="container mx-auto text-center">
+                <h3 class="text-center text-3xl font-bold">Fast and Effective</h3>
+                <p class="text-center text-lg max-w-2xl mx-auto my-6">Our innovative cleaning machines provide a fast and hygienic way to clean helmets. With the rise of motorbike usage in Indonesia, the demand for clean helmets is higher than ever.</p>
+                <div class="grid grid-cols-1 md:grid-cols-4 gap-4 pt-6">
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="card-body">
+                            <img src="/images/fast.png" alt="Fast and Effective" class="w-10 h-10 mx-auto">
+                            <h3 class="text-center text-2xl font-bold text-primary">Fast and Effective</h3>
+                            <p>Cleaning in 8 minutes, giving you a quick and efficient clean every time.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="card-body">
+                            <img src="/images/antibacterial.png" alt="Antibacterial solution" class="w-10 h-10 mx-auto">
+                            <h3 class="text-center text-2xl font-bold text-primary">Antibacterial solution</h3>
+                            <p>We zap bad smells with UV sterilization and antibacterial solution.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="card-body">
+                            <img src="/images/fresh.png" alt="Fresh Scent" class="w-10 h-10 mx-auto">
+                            <h3 class="text-center text-2xl font-bold text-primary">Fresh Scent</h3>
+                            <p>Fresh Fragrance: Every helmet gets a sweet fragrance boost.</p>
+                        </div>
+                    </div>
+                    <div class="card bg-base-100 shadow-xl">
+                        <div class="card-body">
+                            <h3 class="text-center text-2xl font-bold text-primary">Real-time Revenue analytics</h3>
+                            <p>With our new analytics dashboard, you can see your machine's revenue in real-time!</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <section class="features">
             <div class="container">
-                <h2 class="section-title">Why Choose Cuci Helm Franchise?</h2>
+                <h2 class="section-title">How does it work?</h2>
                 <div class="features-grid">
                     <div class="feature-card">
                         <img src="icon1.png" alt="ROI Icon">
@@ -95,5 +121,22 @@
                 <p>Have questions? Reach out to us at <a href="mailto:franchise@cucihelm.com">franchise@cucihelm.com</a>.</p>
             </div>
         </footer>
+        <script>
+            module.exports = {
+                //...
+                daisyui: {
+                    themes: [
+                    {
+                        light: {
+                        ...require("daisyui/src/theming/themes")["light"],
+                        primary: "blue",
+                        secondary: "teal",
+                        "bg-base-100": "#f8f9ff",
+                        },
+                    },
+                    ],
+                },
+            }
+        </script>
     </body>
 </html>
