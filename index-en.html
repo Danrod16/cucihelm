@@ -22,7 +22,7 @@
                 <image src="/images/logo.png" alt="Cuci Helm" class="w-8 h-8 md:w-10 md:h-10"></image>
                 <a href="/" class="btn btn-ghost text-lg md:text-xl">Cuci Helm</a>
             </div>
-            <div class="flex-none">
+            <div class="flex-none hidden md:block">
                 <ul class="menu menu-horizontal px-1 text-sm md:text-base">
                     <li><a href="#about">About</a></li>
                     <li><a href="#locations">Locations</a></li>
@@ -35,6 +35,27 @@
                         </a>
                     </li>
                 </ul>
+            </div>
+            <div class="flex-none md:hidden">
+                <div class="dropdown dropdown-end">
+                    <label tabindex="0" class="btn btn-ghost">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#locations">Locations</a></li>
+                        <li><a href="#support">Support</a></li>
+                        <li><a href="/partners.html">Become a Partner</a></li>
+                        <li>
+                            <a href="/index.html" class="btn btn-ghost btn-xs">
+                                <span class="flag-icon">🇮🇩</span>
+                                ID
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
 
