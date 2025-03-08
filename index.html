@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>The first Helmet cleaning machine in Indonesia - Cuci Helm</title>
-        <meta name="description" content="Cuci Helm is the first Helmet cleaning machine in Indonesia. We offer a fast and hygienic way to clean helmets in under 8 minutes.">
+        <title>Mesin Cuci Helm Pertama di Indonesia - Cuci Helm</title>
+        <meta name="description" content="Cuci Helm adalah mesin cuci helm pertama di Indonesia. Kami menawarkan cara cepat dan higienis untuk membersihkan helm dalam waktu kurang dari 8 menit.">
         <link rel="stylesheet" href="style.css">
         <link rel="icon" href="/images/favicon.png" type="image/png">
         <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -17,145 +17,182 @@
         </script>
     </head>
     <body data-theme="light" class="bg-[#f8f9ff]">
-        <div class="navbar bg-base-100 fixed top-0 left-0 right-0 z-50 px-6 md:px-10">
+        <div class="navbar bg-base-100 fixed top-0 left-0 right-0 z-50">
             <div class="flex-1">
-                <image src="/images/horizontal-logo.svg" alt="Cuci Helm" class=" h-10"></image>
+                <image src="/images/logo.png" alt="Cuci Helm" class="w-10 h-10"></image>
+                <a href="/" class="btn btn-ghost text-xl">Cuci Helm</a>
             </div>
             <div class="flex-none">
-                <!-- <ul class="menu menu-horizontal px-1">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul> -->
+                <ul class="menu menu-horizontal px-1">
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#locations">Lokasi</a></li>
+                    <li><a href="#support">Bantuan</a></li>
+                    <li><a href="/partners.html">Jadikan Mitra</a></li>
+                        <a href="/index-en.html" class="btn btn-ghost btn-sm">
+                            <span class="flag-icon">🇬🇧</span>
+                            EN
+                        </a>
+                    </li>
+                </ul>
             </div>
         </div>
 
-        <div class="min-h-screen hero py-16 md:py-0">
+        <div class="min-h-screen hero">
             <div class="hero-content flex-col lg:flex-row-reverse">
-              <img
-                src="/images/banner-image.png"
-                class="max-w-full lg:ml-10" />
-              <div class="text-center lg:text-left max-w-lg">
-                <h1 class="text-5xl font-bold">Make <span class="text-primary">money</span> from smelly, sweaty helmets</h1>
-                <p class="py-6">
-                    Cuci Helm is Indonesia's first helmet cleaning machine that sanitizes and refreshes your helmets in under 8 minutes.
-                </p>
-                <a class="btn btn-primary" href="https://tinyurl.com/Become-a-partner-in-indonesia" target="_blank">Become a partner</a>
-              </div>
+                <img src="/images/banner-image.png" class="max-w-full" />
+                <div class="text-center lg:text-left max-w-lg">
+                    <h1 class="text-5xl font-bold">Selamat Tinggal Helm Berkeringat dan Bau!</h1>
+                    <p class="py-6">
+                        Cuci Helm membuat pembersihan helm cepat dan sangat mudah.
+                        Kunjungi stasiun pembersihan kami dan dapatkan helm yang segar dan siap dipakai dalam hitungan menit.
+                    </p>
+                    <a href="#locations" class="btn btn-primary">Lihat Lokasi</a>
+                </div>
             </div>
         </div>
+
+
+        <section id="locations" class="min-h-screen h-screen flex flex-col justify-center items-center bg-gradient-to-t from-base-200 to-base-100">
+            <div class="container mx-auto text-center">
+                <h3 class="text-center text-3xl font-bold" data-aos="zoom-in">Lokasi Kami</h3>
+                <p class="text-center text-lg max-w-2xl mx-auto my-6" data-aos="fade-up">Temukan stasiun pembersihan Cuci Helm terdekat.</p>
+                <div class="rounded-lg overflow-hidden shadow-2xl" data-aos="flip-up">
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31693.123456789!2d106.827153!3d-6.175110!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e4b5b5b5b5%3A0x5b5b5b5b5b5b5b5b!2sCuci%20Helm!5e0!3m2!1sen!2sid!4v1234567890" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
 
         <section class="min-h-screen flex flex-col justify-center items-center py-24 md:py-20 px-6 md:px-8" id="about">
             <div class="container mx-auto text-center">
-                <h3 class="text-center text-2xl md:text-3xl font-bold mb-4">Why Cuci Helm stations?</h3>
-                <p class="text-center text-base md:text-lg max-w-2xl mx-auto my-4 md:my-6">Our innovative helmet cleaning stations provide fast, hygienic service to Indonesia's growing motorcycle community.</p>
+                <h3 class="text-center text-2xl md:text-3xl font-bold mb-4">Mengapa memilih stasiun Cuci Helm?</h3>
+                <p class="text-center text-base md:text-lg max-w-2xl mx-auto my-4 md:my-6">Stasiun pembersihan helm inovatif kami menyediakan layanan cepat dan higienis untuk komunitas pengendara motor Indonesia yang terus berkembang.</p>
                 <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8 pt-4 md:pt-6">
                     <div class="grid grid-cols-2 grid-rows-3 gap-3 md:gap-4 h-72 md:h-96">
-                        <img src="/images/helmet-cleaning-machine-2.JPG" alt="Helmet cleaning machine" class="row-span-2 col-span-1 w-full h-full rounded-lg md:rounded-xl object-cover shadow-lg">
-                        <img src="/images/helmet-cleaning-machine-1.JPG" alt="Helmet cleaning machine" class="row-span-1 col-span-1 w-full h-full rounded-lg md:rounded-xl object-cover shadow-lg">
-                        <img src="/images/helmet-cleaning-machine-3.JPG" alt="Cuci Helm Machine" class="row-span-2 col-span-1 w-full h-full rounded-lg md:rounded-xl object-cover shadow-lg">
-                        <img src="/images/helmet-cleaning-machine-4.JPG" alt="Cuci Helm Machine" class="row-span-1 col-span-1 w-full h-full rounded-lg md:rounded-xl object-cover shadow-lg">
+                        <img src="/images/helmet-cleaning-machine-2.JPG" alt="Mesin cuci helm" class="row-span-2 col-span-1 w-full h-full rounded-lg md:rounded-xl object-cover shadow-lg">
+                        <img src="/images/helmet-cleaning-machine-1.JPG" alt="Mesin cuci helm" class="row-span-1 col-span-1 w-full h-full rounded-lg md:rounded-xl object-cover shadow-lg">
+                        <img src="/images/helmet-cleaning-machine-3.JPG" alt="Mesin Cuci Helm" class="row-span-2 col-span-1 w-full h-full rounded-lg md:rounded-xl object-cover shadow-lg">
+                        <img src="/images/helmet-cleaning-machine-4.JPG" alt="Mesin Cuci Helm" class="row-span-1 col-span-1 w-full h-full rounded-lg md:rounded-xl object-cover shadow-lg">
                     </div>
                     <ul class="space-y-8 md:space-y-12 text-left py-8 md:py-12">
                         <li class="flex items-start space-x-3 md:space-x-4">
-                            <img src="/images/fast.png" alt="Fast and Effective" class="w-8 h-8 md:w-10 md:h-10">
+                            <img src="/images/fast.png" alt="Cepat dan Efektif" class="w-8 h-8 md:w-10 md:h-10">
                             <div class="text-left">
-                                <h3 class="text-xl md:text-2xl font-bold text-primary">Fast and Effective</h3>
-                                <p class="text-sm md:text-base">Cleaning in 8 minutes, giving you a quick and efficient clean every time.</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-primary">Cepat dan Efektif</h3>
+                                <p class="text-sm md:text-base">Pembersihan dalam 8 menit, memberikan hasil bersih yang cepat dan efisien setiap kali.</p>
                             </div>
                         </li>
                         <li class="flex items-start space-x-3 md:space-x-4">
-                            <img src="/images/antibacterial.png" alt="Antibacterial solution" class="w-8 h-8 md:w-10 md:h-10">
+                            <img src="/images/antibacterial.png" alt="Larutan antibakteri" class="w-8 h-8 md:w-10 md:h-10">
                             <div class="text-left">
-                                <h3 class="text-xl md:text-2xl font-bold text-primary">Antibacterial solution</h3>
-                                <p class="text-sm md:text-base">We zap bad smells with UV sterilization and antibacterial solution.</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-primary">Larutan antibakteri</h3>
+                                <p class="text-sm md:text-base">Kami menghilangkan bau tidak sedap dengan sterilisasi UV dan larutan antibakteri.</p>
                             </div>
                         </li>
                         <li class="flex items-start space-x-3 md:space-x-4">
-                            <img src="/images/fresh.png" alt="Fresh Scent" class="w-8 h-8 md:w-10 md:h-10">
+                            <img src="/images/fresh.png" alt="Wangi Segar" class="w-8 h-8 md:w-10 md:h-10">
                             <div class="text-left">
-                                <h3 class="text-xl md:text-2xl font-bold text-primary">Fresh Scent</h3>
-                                <p class="text-sm md:text-base">We work with reputable chemists to create unique and fresh fragrances. Like fresh out of the shower!</p>
+                                <h3 class="text-xl md:text-2xl font-bold text-primary">Wangi Segar</h3>
+                                <p class="text-sm md:text-base">Kami bekerja sama dengan ahli kimia terpercaya untuk menciptakan wewangian unik dan segar. Seperti baru selesai mandi!</p>
                             </div>
                         </li>
                     </ul>
                 </div>
-                    <!-- <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
-                        <div class="card-body hover:-translate-y-2 transition-transform">
-                            <h3 class="text-center text-2xl font-bold text-primary">Real-time Revenue analytics</h3>
-                            <p>With our new analytics dashboard, you can see your machine's revenue in real-time!</p>
-                        </div>
-                    </div>
-                    <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
-                        <div class="card-body hover:-translate-y-2 transition-transform">
-                            <h3 class="text-center text-2xl font-bold text-primary">Low maintenance</h3>
-                            <p>Remove the maintenance % from your ROI calculation. We provide a low maintenance solution for your business. You can focus on your business, and we'll handle the rest.</p>
-                        </div>
-                    </div>
-                    <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300">
-                        <div class="card-body hover:-translate-y-2 transition-transform">
-                            <h3 class="text-center text-2xl font-bold text-primary">Early mover advantage</h3>
-                            <p>We are the first Helmet cleaning Stations in Indonesia, by partnering with us you will be the first to offer this service to your customers.</p>
-                        </div>
-                    </div -->
                 </div>
             </div>
         </section>
-
-        <section id="intro" class="py-16 md:py-0">
+        <section id="support" class="py-16 md:py-0">
             <div class="container mx-auto h-screen flex flex-col md:flex-row justify-center items-center" data-aos="fade-up">
                 <div class="md:w-1/2 md:text-left text-center md:pr-8">
-                    <h3 class="text-4xl font-bold animate-fade-in">Turn every <span class="text-primary">helmet</span> into profit</h3>
-                    <p class="text-xl my-6 animate-fade-in-up">Earn a generous revenue share and give your customers fresh, spotless helmets in under 8 minutes—effortless for you, invaluable for them!</p>
+                    <h3 class="text-4xl font-bold animate-fade-in">Butuh <span class="text-primary">bantuan</span>?</h3>
+                    <p class="text-xl my-6 animate-fade-in-up">Tim layanan pelanggan kami siap membantu Anda dengan pertanyaan seputar layanan pembersihan helm kami. Kami biasanya merespons dalam hitungan menit selama jam kerja.</p>
                 </div>
                 <div class="md:w-1/2 flex justify-center">
-                    <div id="getWaitlistContainer" class="mx-auto" data-waitlist_id="24102" data-widget_type="WIDGET_1">
-                    </div>
-                    <link class="text-center mx-auto flex justify-center" rel="stylesheet" type="text/css" href="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.css"/>
-                    <script class="text-center mx-auto" src="https://prod-waitlist-widget.s3.us-east-2.amazonaws.com/getwaitlist.min.js"></script>
+                    <iframe
+                        src="https://www.chatbase.co/chatbot-iframe/eccLDtKzjnHi3GkVZsz-4"
+                        width="100%"
+                        style="height: 100%; min-height: 700px"
+                        frameborder="0"
+                    ></iframe>
                 </div>
             </div>
         </section>
 
-<!-- 
-        <section id="locations" class="min-h-screen h-screen flex flex-col justify-center items-center bg-gradient-to-t from-base-200 to-base-100">
-            <div class="container mx-auto text-center">
-                <h3 class="text-center text-3xl font-bold" data-aos="zoom-in">Locations</h3>
-                <p class="text-center text-lg max-w-2xl mx-auto my-6" data-aos="fade-up">Our innovative cleaning machines provide a fast and hygienic way to clean helmets. With the rise of motorbike usage in Indonesia, the demand for clean helmets is higher than ever.</p>
-                <div class="rounded-lg overflow-hidden shadow-2xl" data-aos="flip-up">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450" src="https://www.pampam.city/p/4QYeT8jsEKlllnTFc4b3" allowfullscreen></iframe>
-                </div>
-            </div>
-        </section> -->
 
-        <!-- <section class="min-h-screen h-screen flex flex-col justify-center items-center bg-primary/5">
+        <section id="faq" class="min-h-screen h-screen flex flex-col justify-center items-center bg-base-200">
             <div class="container mx-auto text-center">
-                <h2 class="text-3xl font-bold mb-8" data-aos="fade-down">Success Stories</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <div class="card bg-base-100 shadow-xl hover:shadow-2xl transition-all duration-300" data-aos="zoom-in-up">
-                        <div class="card-body">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="avatar">
-                                    <div class="w-16 rounded-full ring ring-primary ring-offset-2">
-                                        <img src="testimonial1.jpg" alt="Franchise Owner" />
-                                    </div>
-                                </div>
-                                <div>
-                                    <h4 class="text-xl font-bold">Ahmad Sulaiman</h4>
-                                    <p class="text-base-content/70">Jakarta Franchise Owner</p>
-                                </div>
-                            </div>
-                            <p class="text-base-content/80 italic">"Generated Rp 15M in my first year. The support from Cuci Helm team was exceptional."</p>
+                <h3 class="text-center text-3xl font-bold mb-4" data-aos="fade-down">Pertanyaan yang Sering Diajukan</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="collapse collapse-arrow bg-base-100 shadow-lg">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium">
+                            Apa itu Cuci Helm?
+                        </div>
+                        <div class="collapse-content">
+                            <p>Cuci Helm adalah mesin cuci helm yang mensterilkan, mengeringkan, dan memberikan wewangian pada helm Anda hanya dalam 8 menit dengan harga Rp 25.000. Anda dapat menemukan lokasi mesin kami di sini: <a href="https://cucihelm.id/#locations" class="link link-primary">https://cucihelm.id/#locations</a>. 😊</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-100 shadow-lg">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium">
+                            Saya tidak mendapatkan kembalian dari mesin!
+                        </div>
+                        <div class="collapse-content">
+                            <p>Mohon maaf atas ketidaknyamanannya! Saat ini, mesin Cuci Helm hanya menerima uang kertas Rupiah dan tidak memberikan kembalian. Jika Anda ingin mendapatkan pengembalian dana untuk selisihnya, silakan unggah foto layar mesin yang menunjukkan pembayaran Anda. Kami akan memproses pengembalian dana ke rekening bank Anda dalam waktu 3-4 hari kerja. Mohon sertakan juga detail rekening bank Anda. 😊</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-100 shadow-lg">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium">
+                            Saya memasukkan beberapa lembar uang sekaligus, dan sekarang mesinnya tidak berfungsi!
+                        </div>
+                        <div class="collapse-content">
+                            <p>Mohon maaf atas masalah ini! 😔 Jika Anda memasukkan beberapa lembar uang sekaligus dan mesin tidak merespons, kami dapat mengembalikan selisihnya. Mohon unggah foto layar mesin dan berikan detail rekening bank Anda, dan kami akan memproses pengembalian dana Anda secepat mungkin.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-100 shadow-lg">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium">
+                            Saya tidak bisa memberikan foto atau bukti pembelian.
+                        </div>
+                        <div class="collapse-content">
+                            <p>Kami memahami bahwa terkadang sulit untuk memberikan foto setelah meninggalkan lokasi. Jika Anda memiliki detail lain tentang transaksi Anda, seperti waktu dan jumlah yang Anda bayar, silakan bagikan informasi tersebut ke hey@cucihelm.id. Jika jumlahnya sesuai dengan transaksi pada waktu tersebut, kami akan dapat memproses pengembalian dana ke rekening Anda. Dalam hal apapun, kami akan berusaha sebaik mungkin untuk membantu Anda! 😊</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-100 shadow-lg">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium">
+                            Saya tertarik menjadi mitra Cuci Helm. Bagaimana cara bergabung?
+                        </div>
+                        <div class="collapse-content">
+                            <p>Terima kasih atas minat Anda! 🎉 Anda dapat menemukan detail lebih lanjut tentang program kemitraan kami dalam PDF yang tersedia di sumber data kami. Jika Anda tertarik, silakan berikan email atau nomor WhatsApp Anda, dan tim kami akan menghubungi Anda dengan informasi lebih lanjut.</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-100 shadow-lg">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium">
+                            Saya punya masukan untuk Cuci Helm!
+                        </div>
+                        <div class="collapse-content">
+                            <p>Terima kasih atas masukan Anda! Kami selalu berusaha meningkatkan layanan kami. Jika Anda memiliki saran lebih lanjut, silakan bagikan dengan kami, dan kami akan meninjau dan mempertimbangkannya untuk perbaikan di masa mendatang. 😊</p>
+                        </div>
+                    </div>
+                    <div class="collapse collapse-arrow bg-base-100 shadow-lg">
+                        <input type="checkbox" />
+                        <div class="collapse-title text-xl font-medium">
+                            Di mana saya bisa menemukan mesin Cuci Helm?
+                        </div>
+                        <div class="collapse-content">
+                            <p>Anda dapat memeriksa lokasi mesin kami di sini: <a href="https://cucihelm.id/#locations" class="link link-primary">https://cucihelm.id/#locations</a>. Kami terus berkembang ke lokasi baru, jadi tetap pantau terus!</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </section> -->
+        </section>
 
         <footer class="footer bg-neutral text-neutral-content p-10" id="contact">
             <div class="container mx-auto">
-                <h3 class="text-2xl font-bold mb-4">Contact Us</h3>
-                <p class="text-lg">Have questions? Reach out to us at <a href="mailto:hey@cucihelm.id" class="link link-accent">hey@cucihelm.id</a>.</p>
+                <h3 class="text-2xl font-bold mb-4">Hubungi Kami</h3>
+                <p class="text-lg">Punya pertanyaan? Hubungi kami di <a href="mailto:hey@cucihelm.id" class="link link-accent">hey@cucihelm.id</a>.</p>
             </div>
         </footer>
         <script>
@@ -174,6 +211,30 @@
                     ],
                 },
             }
+        </script>
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                const links = document.querySelectorAll('a[href^="#"]');
+
+                for (const link of links) {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+
+                        const targetId = this.getAttribute('href');
+                        const targetElement = document.querySelector(targetId);
+
+                        if (targetElement) {
+                            window.scrollTo({
+                                top: targetElement.offsetTop,
+                                behavior: 'smooth'
+                            });
+                        }
+                    });
+                }
+            });
+        </script>
+        <script>
+            (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="eccLDtKzjnHi3GkVZsz-4";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
         </script>
     </body>
 </html>
